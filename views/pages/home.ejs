@@ -1,0 +1,39 @@
+      <%- include('../partials/header') %>
+
+      <h1><%=title%></h1>  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content horizontally */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Website</h1>
+        <p>The construction of this web page involved the utilization of Node.js, Express.js, and EJS templates. This statement underscores the key technologies and tools employed in the development of the web application or website.</p>
+        <img src="images/ejs.png" alt="Image" class="image">
+    </div>
+</body>
+      <%- include('../partials/footer') %>

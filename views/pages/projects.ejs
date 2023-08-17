@@ -1,0 +1,61 @@
+<%- include('../partials/header') %>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .project {
+            flex-basis: calc(50% - 1rem);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+        .project-title {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .project-description {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Showcase</h1>
+    </header>
+    <div class="container">
+        <div class="project">
+            <img src="images/mycalendar.png" alt="Project 1">
+            <h2 class="project-title">Event Manager</h2>
+            <p class="project-description">This is a simple Event Manager app done with UIKit. App works with - CloudKit, MapKit, CoreLocation, UserNotifications</p>
+        </div>
+        <div class="project">
+            <img src="images/latinnews.png" alt="Project 2">
+            <h2 class="project-title">Latinx News</h2>
+            <p class="project-description">This is a simple News App done with UIKit. UI is done programmatically, no storyboards. App works with - Costum UserDefaults for Persistance and Codable for Network requests.</p>
+        </div>
+    </div>
+</body>
+  <%- include('../partials/footer') %>
